@@ -288,15 +288,17 @@ def get_product_benefit(client_data):
     # Упрощенная метрика: 4% от трат на путешествия/такси
     benefits["travel_card"] = 0.04 * travel_spend
 
-    # Вычисляем выгоду для 'Премиальная карта'
     premium_spend = 0
     for cat in PREMIUM_CATEGORIES:
         if cat in client_data["transaction_data"]["expenses_per_cat"]:
             premium_spend += client_data["transaction_data"]["expenses_per_cat"][cat]["KZT"]["amount"]
-    # Упрощенная метрика: 2% базового кешбэка + 4% от трат в премиум-категориях.
-    # Базовый кэшбэк берем от всех трат
+
+    # Расчет базовых трат (все траты минус траты в премиум-категориях)
     all_expenses = client_data["transaction_data"]["expenses"]["KZT"]["amount"]
-    benefits["premium_card"] = (0.02 * all_expenses) + (0.04 * premium_spend)
+    base_spend = all_expenses - premium_spend
+
+    # Метрика: 2% базового кешбэка + 4% от трат в премиум-категориях
+    benefits["premium_card"] = (0.02 * base_spend) + (0.04 * premium_spend)
 
     # Вычисляем выгоду для 'Кредитная карта'
     credit_card_spend = 0
@@ -309,7 +311,7 @@ def get_product_benefit(client_data):
     # Вычисляем выгоду для 'Обмен валют'
     # Сигнал: траты в USD/EUR.
     # В ваших данных все траты в KZT, поэтому выгода будет 0.
-    benefits["fx_exchange"] = (
+    benefits["fx"] = (
         client_data["transaction_data"]["expenses"]["USD"]["amount"] * 0.02
         + client_data["transaction_data"]["expenses"]["EUR"]["amount"] * 0.02
     )
@@ -319,7 +321,7 @@ def get_product_benefit(client_data):
     # Упрощенная метрика: высокий потенциал, если баланс низкий
     # и есть платежи по кредитам
     loan_payments = client_data["transfer_data"]["amount_out_per_type"]["loan_payment_out"]["KZT"]["amount"]
-    benefits["credit_cash"] = loan_payments * 0.1 # Условный коэффициент выгоды
+    benefits["cash_loan"] = loan_payments * 0.1 # Условный коэффициент выгоды
 
     # Для Депозитов и Инвестиций вычисляем выгоду на основе баланса.
     avg_balance = client_data["avg_monthly_balance_KZT"]
@@ -340,7 +342,7 @@ def get_product_benefit(client_data):
 
     # 'Инвестиции (брокерский счёт)'
     # Сигнал: свободные деньги (высокий баланс).
-    benefits["investment"] = avg_balance * 0.06
+    benefits["investments"] = avg_balance * 0.06
 
     return benefits
 
