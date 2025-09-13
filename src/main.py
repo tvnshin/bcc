@@ -3,6 +3,9 @@ import glob
 import os
 import json
 
+from pandas.core.apply import reconstruct_func
+
+from src.templates import TEMPLATES_BY_AGE, generate_personalized_push
 transactions_columns = ['client_code', 'name', 'product', 'status', 'city', 'date', 'category', 'amount', 'currency']
 transfers_columns = ['client_code', 'name', 'product', 'status', 'city', 'date', 'type', 'direction', 'amount',
                      'currency']
@@ -362,6 +365,7 @@ def find_best_product_for_client(client_data):
     max_benefit = benefits[best_product]
     return (best_product, max_benefit)
 
+import csv
 
 def process_all_clients(all_clients_data):
     """
@@ -373,13 +377,23 @@ def process_all_clients(all_clients_data):
     Returns:
         dict: Словарь с рекомендациями для каждого клиента.
     """
-    recommendations = {}
-    for client_id, data in all_clients_data.items():
+    recommendations_list = []
+    for client_code, data in all_clients_data.items():
         best_product, max_benefit = find_best_product_for_client(data)
-        recommendations[data["name"]] = {
-            "Наиболее выгодный продукт": best_product,
-            "Потенциальная выгода (условная, KZT)": f"{max_benefit:.2f}",
-        }
-    return recommendations
+        notif = generate_personalized_push(client_payload={"name": data["name"], "age": data["age"]}, product_key=best_product, benefit_val=max_benefit)
+        recommendations_list.append(notif)
+        # template = TEMPLATES_BY_AGE.get(best_product).get("0-16")
+        # if template:
+        #     formatted_template = template.replace("{name}", data["name"]).replace("{benefit}", str(max_benefit))
+        #     recommendations_list.append([client_code, best_product, formatted_template])
+    csv_file_path = "notifs.csv"
+    with open(csv_file_path, 'w', newline='', encoding='utf-8') as new_file:
+        writer = csv.writer(new_file)
+        # Записываем заголовок
+        writer.writerow(["client_code", "product", "push_notification"])
+        # Записываем данные
+        writer.writerows(recommendations_list)
+
+    print(f"Данные успешно записаны в файл {csv_file_path}")
 
 print(process_all_clients(clients))
