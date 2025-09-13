@@ -1,0 +1,6 @@
+*.pyc
+.idea
+.venv
+desired_transaction_data.json
+desired_transfer_data.json
+files

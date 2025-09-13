@@ -1,0 +1,144 @@
+{
+  "1": {
+    "name": "Alice",
+    "product": "Премиальная карта",
+    "status": "зп",
+    "city": "Алматы",
+    "transaction_data": {
+      "expenses": {
+        "USD": {
+          "amount": 0.0,
+          "transactions": 0
+        },
+        "EUR": {
+          "amount": 0.0,
+          "transactions": 0
+        },
+        "KZT": {
+          "amount": 0.0,
+          "transactions": 0
+        }
+      },
+      "expenses_per_cat": {
+        "category_name1": {
+          "USD": {
+            "amount": 0.0,
+            "transactions": 0
+          },
+          "EUR": {
+            "amount": 0.0,
+            "transactions": 0
+          },
+          "KZT": {
+            "amount": 0.0,
+            "transactions": 0
+          }
+        },
+        "category_name2": {
+          "USD": {
+            "amount": 0.0,
+            "transactions": 0
+          },
+          "EUR": {
+            "amount": 0.0,
+            "transactions": 0
+          },
+          "KZT": {
+            "amount": 0.0,
+            "transactions": 0
+          }
+        }
+      }
+    },
+    "transfer_data": {
+      "amount_in": {
+      "USD": {
+          "amount": 0.0,
+          "transactions": 0
+        },
+        "EUR": {
+          "amount": 0.0,
+          "transactions": 0
+        },
+        "KZT": {
+          "amount": 0.0,
+          "transactions": 0
+        }
+    },
+      "amount_out": {
+        "USD": {
+            "amount": 0.0,
+            "transactions": 0
+          },
+          "EUR": {
+            "amount": 0.0,
+            "transactions": 0
+          },
+          "KZT": {
+            "amount": 0.0,
+            "transactions": 0
+          }
+      },
+      "amount_in_per_type": {
+        "type_name1": {
+          "USD": {
+            "amount": 0.0,
+            "transactions": 0
+          },
+          "EUR": {
+            "amount": 0.0,
+            "transactions": 0
+          },
+          "KZT": {
+            "amount": 0.0,
+            "transactions": 0
+          }
+        },
+        "type_name2": {
+          "USD": {
+            "amount": 0.0,
+            "transactions": 0
+          },
+          "EUR": {
+            "amount": 0.0,
+            "transactions": 0
+          },
+          "KZT": {
+            "amount": 0.0,
+            "transactions": 0
+          }
+        }
+      },
+      "amount_out_per_type": {
+        "type_name1": {
+          "USD": {
+            "amount": 0.0,
+            "transactions": 0
+          },
+          "EUR": {
+            "amount": 0.0,
+            "transactions": 0
+          },
+          "KZT": {
+            "amount": 0.0,
+            "transactions": 0
+          }
+        },
+        "type_name2": {
+          "USD": {
+            "amount": 0.0,
+            "transactions": 0
+          },
+          "EUR": {
+            "amount": 0.0,
+            "transactions": 0
+          },
+          "KZT": {
+            "amount": 0.0,
+            "transactions": 0
+          }
+        }
+      }
+    }
+  }
+}
