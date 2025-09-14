@@ -12,6 +12,8 @@
 
 ## Usage
 
+All .csv input files should be put in the directory [**case 1**]
+
 To run the script, execute the main file:
 
 ```bash
