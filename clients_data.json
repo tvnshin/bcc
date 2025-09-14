@@ -2,7 +2,7 @@
     "1": {
         "name": "Айгерим",
         "product": "Карта для путешествий",
-        "status": "Зарплатный клиент",
+        "status": "зп",
         "city": "Алматы",
         "age": 29,
         "avg_monthly_balance_KZT": 92643,
@@ -326,7 +326,7 @@
     "2": {
         "name": "Данияр",
         "product": "Карта для путешествий",
-        "status": "Премиальный клиент",
+        "status": "вип",
         "city": "Астана",
         "age": 41,
         "avg_monthly_balance_KZT": 1577073,
@@ -650,7 +650,7 @@
     "3": {
         "name": "Сабина",
         "product": "Карта для путешествий",
-        "status": "Студент",
+        "status": "студент",
         "city": "Алматы",
         "age": 22,
         "avg_monthly_balance_KZT": 63116,
@@ -988,7 +988,7 @@
     "4": {
         "name": "Тимур",
         "product": "Карта для путешествий",
-        "status": "Зарплатный клиент",
+        "status": "зп",
         "city": "Караганда",
         "age": 36,
         "avg_monthly_balance_KZT": 83351,
@@ -1312,7 +1312,7 @@
     "5": {
         "name": "Камилла",
         "product": "Карта для путешествий",
-        "status": "Премиальный клиент",
+        "status": "вип",
         "city": "Алматы",
         "age": 45,
         "avg_monthly_balance_KZT": 1336536,
@@ -1636,7 +1636,7 @@
     "6": {
         "name": "Аян",
         "product": "Карта для путешествий",
-        "status": "Стандартный клиент",
+        "status": "обычный",
         "city": "Шымкент",
         "age": 34,
         "avg_monthly_balance_KZT": 131929,
@@ -1960,7 +1960,7 @@
     "7": {
         "name": "Руслан",
         "product": "Премиальная карта",
-        "status": "Премиальный клиент",
+        "status": "вип",
         "city": "Алматы",
         "age": 48,
         "avg_monthly_balance_KZT": 4040997,
@@ -2256,7 +2256,7 @@
     "8": {
         "name": "Мадина",
         "product": "Премиальная карта",
-        "status": "Зарплатный клиент",
+        "status": "зп",
         "city": "Астана",
         "age": 33,
         "avg_monthly_balance_KZT": 1058403,
@@ -2552,7 +2552,7 @@
     "9": {
         "name": "Арман",
         "product": "Премиальная карта",
-        "status": "Премиальный клиент",
+        "status": "вип",
         "city": "Алматы",
         "age": 55,
         "avg_monthly_balance_KZT": 3084180,
@@ -2848,7 +2848,7 @@
     "10": {
         "name": "Карина",
         "product": "Премиальная карта",
-        "status": "Зарплатный клиент",
+        "status": "зп",
         "city": "Усть-Каменогорск",
         "age": 38,
         "avg_monthly_balance_KZT": 1277325,
@@ -3144,7 +3144,7 @@
     "11": {
         "name": "Бауржан",
         "product": "Премиальная карта",
-        "status": "Премиальный клиент",
+        "status": "вип",
         "city": "Павлодар",
         "age": 50,
         "avg_monthly_balance_KZT": 3230572,
@@ -3440,7 +3440,7 @@
     "12": {
         "name": "Жанар",
         "product": "Премиальная карта",
-        "status": "Зарплатный клиент",
+        "status": "зп",
         "city": "Костанай",
         "age": 42,
         "avg_monthly_balance_KZT": 849046,
@@ -3736,7 +3736,7 @@
     "13": {
         "name": "Алина",
         "product": "Кредитная карта",
-        "status": "Студент",
+        "status": "студент",
         "city": "Алматы",
         "age": 20,
         "avg_monthly_balance_KZT": 54074,
@@ -4102,7 +4102,7 @@
     "14": {
         "name": "Диас",
         "product": "Кредитная карта",
-        "status": "Зарплатный клиент",
+        "status": "зп",
         "city": "Астана",
         "age": 27,
         "avg_monthly_balance_KZT": 57385,
@@ -4412,7 +4412,7 @@
     "15": {
         "name": "Нурия",
         "product": "Кредитная карта",
-        "status": "Стандартный клиент",
+        "status": "обычный",
         "city": "Шымкент",
         "age": 31,
         "avg_monthly_balance_KZT": 160778,
@@ -4722,7 +4722,7 @@
     "16": {
         "name": "Ерасыл",
         "product": "Кредитная карта",
-        "status": "Студент",
+        "status": "студент",
         "city": "Караганда",
         "age": 23,
         "avg_monthly_balance_KZT": 46630,
@@ -5088,7 +5088,7 @@
     "17": {
         "name": "Жанель",
         "product": "Кредитная карта",
-        "status": "Зарплатный клиент",
+        "status": "зп",
         "city": "Тараз",
         "age": 30,
         "avg_monthly_balance_KZT": 89126,
@@ -5398,7 +5398,7 @@
     "18": {
         "name": "Санжар",
         "product": "Кредитная карта",
-        "status": "Стандартный клиент",
+        "status": "обычный",
         "city": "Кызылорда",
         "age": 35,
         "avg_monthly_balance_KZT": 98089,
@@ -5708,7 +5708,7 @@
     "19": {
         "name": "Азамат",
         "product": "Обмен валют",
-        "status": "Зарплатный клиент",
+        "status": "зп",
         "city": "Алматы",
         "age": 32,
         "avg_monthly_balance_KZT": 80150,
@@ -6018,7 +6018,7 @@
     "20": {
         "name": "Анель",
         "product": "Обмен валют",
-        "status": "Стандартный клиент",
+        "status": "обычный",
         "city": "Астана",
         "age": 28,
         "avg_monthly_balance_KZT": 141515,
@@ -6328,7 +6328,7 @@
     "21": {
         "name": "Павел",
         "product": "Обмен валют",
-        "status": "Премиальный клиент",
+        "status": "вип",
         "city": "Алматы",
         "age": 44,
         "avg_monthly_balance_KZT": 1798169,
@@ -6638,7 +6638,7 @@
     "22": {
         "name": "Аружан",
         "product": "Обмен валют",
-        "status": "Зарплатный клиент",
+        "status": "зп",
         "city": "Шымкент",
         "age": 26,
         "avg_monthly_balance_KZT": 77474,
@@ -6948,7 +6948,7 @@
     "23": {
         "name": "Темирлан",
         "product": "Обмен валют",
-        "status": "Стандартный клиент",
+        "status": "обычный",
         "city": "Павлодар",
         "age": 39,
         "avg_monthly_balance_KZT": 146389,
@@ -7258,7 +7258,7 @@
     "24": {
         "name": "Гульмира",
         "product": "Обмен валют",
-        "status": "Зарплатный клиент",
+        "status": "зп",
         "city": "Усть-Каменогорск",
         "age": 41,
         "avg_monthly_balance_KZT": 53785,
@@ -7568,7 +7568,7 @@
     "25": {
         "name": "Адиль",
         "product": "Кредит наличными",
-        "status": "Зарплатный клиент",
+        "status": "зп",
         "city": "Алматы",
         "age": 36,
         "avg_monthly_balance_KZT": 55634,
@@ -7850,7 +7850,7 @@
     "26": {
         "name": "Маржан",
         "product": "Кредит наличными",
-        "status": "Стандартный клиент",
+        "status": "обычный",
         "city": "Астана",
         "age": 33,
         "avg_monthly_balance_KZT": 136248,
@@ -8174,7 +8174,7 @@
     "27": {
         "name": "Нурсултан",
         "product": "Кредит наличными",
-        "status": "Зарплатный клиент",
+        "status": "зп",
         "city": "Караганда",
         "age": 29,
         "avg_monthly_balance_KZT": 70858,
@@ -8498,7 +8498,7 @@
     "28": {
         "name": "Алтынай",
         "product": "Кредит наличными",
-        "status": "Стандартный клиент",
+        "status": "обычный",
         "city": "Кызылорда",
         "age": 42,
         "avg_monthly_balance_KZT": 150281,
@@ -10302,7 +10302,7 @@
     "34": {
         "name": "Инкар",
         "product": "Депозит Мультивалютный",
-        "status": "Стандартный клиент",
+        "status": "обычный",
         "city": "Караганда",
         "age": 37,
         "avg_monthly_balance_KZT": 115930,
@@ -10317,11 +10317,124 @@
                     "transactions": 0
                 },
                 "KZT": {
-                    "amount": 0.0,
-                    "transactions": 0
+                    "amount": 2288806.819999999,
+                    "transactions": 300
                 }
             },
-            "expenses_per_cat": {}
+            "expenses_per_cat": {
+                "Едим дома": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 145961.90999999995,
+                        "transactions": 28
+                    }
+                },
+                "Кафе и рестораны": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 450199.9,
+                        "transactions": 61
+                    }
+                },
+                "Смотрим дома": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 204714.12,
+                        "transactions": 35
+                    }
+                },
+                "Продукты питания": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 808222.7100000001,
+                        "transactions": 53
+                    }
+                },
+                "Играем дома": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 184919.99,
+                        "transactions": 36
+                    }
+                },
+                "АЗС": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 85116.38,
+                        "transactions": 5
+                    }
+                },
+                "Кино": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 139769.42,
+                        "transactions": 28
+                    }
+                },
+                "Такси": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 269902.39,
+                        "transactions": 54
+                    }
+                }
+            }
         },
         "transfer_data": {
             "amount_in": {
@@ -13319,7 +13432,7 @@
     "45": {
         "name": "Диана",
         "product": "Депозит Накопительный",
-        "status": "Зарплатный клиент",
+        "status": "зп",
         "city": "Караганда",
         "age": 27,
         "avg_monthly_balance_KZT": 72552,
@@ -13334,11 +13447,208 @@
                     "transactions": 0
                 },
                 "KZT": {
-                    "amount": 0.0,
-                    "transactions": 0
+                    "amount": 9307653.880000003,
+                    "transactions": 300
                 }
             },
-            "expenses_per_cat": {}
+            "expenses_per_cat": {
+                "Подарки": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 550629.4400000002,
+                        "transactions": 31
+                    }
+                },
+                "Продукты питания": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 864066.4600000002,
+                        "transactions": 45
+                    }
+                },
+                "Спорт": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 621808.26,
+                        "transactions": 34
+                    }
+                },
+                "Ремонт дома": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 1391793.47,
+                        "transactions": 23
+                    }
+                },
+                "Едим дома": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 131343.97,
+                        "transactions": 17
+                    }
+                },
+                "Мебель": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 917171.8600000001,
+                        "transactions": 20
+                    }
+                },
+                "Кафе и рестораны": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 1264161.9800000002,
+                        "transactions": 68
+                    }
+                },
+                "Смотрим дома": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 111564.19000000002,
+                        "transactions": 15
+                    }
+                },
+                "Одежда и обувь": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 797563.6000000001,
+                        "transactions": 19
+                    }
+                },
+                "Косметика и Парфюмерия": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 737486.9099999999,
+                        "transactions": 18
+                    }
+                },
+                "Отели": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 384755.74,
+                        "transactions": 4
+                    }
+                },
+                "Ювелирные украшения": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 1304268.6600000001,
+                        "transactions": 3
+                    }
+                },
+                "Авто": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 228330.57,
+                        "transactions": 2
+                    }
+                },
+                "Кино": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 2708.77,
+                        "transactions": 1
+                    }
+                }
+            }
         },
         "transfer_data": {
             "amount_in": {
