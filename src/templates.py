@@ -268,4 +268,4 @@ def generate_personalized_push(client_payload: dict, product_key: str, benefit_v
     push_text = push_text.strip()
 
     # return CSV-ready row: [client_code, product_title, push_text]
-    return [client_code, product_title, push_text]
+    return push_text

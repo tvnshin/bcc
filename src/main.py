@@ -7,7 +7,7 @@ import re
 import csv
 from pandas.core.apply import reconstruct_func
 
-from templates import TEMPLATES_BY_AGE, generate_personalized_push
+from src.templates import TEMPLATES_BY_AGE, generate_personalized_push
 
 transactions_columns = [
     "client_code",
