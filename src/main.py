@@ -305,16 +305,16 @@ for file in csv_files:
         print(f"Ошибка при чтении файла {file_name}: {e}")
 
 
-output_file_path = "clients_data.json"
-
-try:
-    with open(output_file_path, "w", encoding="utf-8") as json_file:
-        json.dump(clients, json_file, ensure_ascii=False, indent=4)
-
-    print(f"Data successfully saved to {output_file_path}")
-
-except Exception as e:
-    print(f"Error writing to JSON file: {e}")
+# output_file_path = "clients_data.json"
+#
+# try:
+#     with open(output_file_path, "w", encoding="utf-8") as json_file:
+#         json.dump(clients, json_file, ensure_ascii=False, indent=4)
+#
+#     print(f"Data successfully saved to {output_file_path}")
+#
+# except Exception as e:
+#     print(f"Error writing to JSON file: {e}")
 
 import math
 
@@ -527,12 +527,12 @@ for cid, data in clients.items():
     for prod in sorted(b1m.keys()):
         all_rows.append([cid, name, prod, round(b1m[prod], 2), round(b3m[prod], 2)])
 
-with open("best_recommendations.csv", "w", newline="", encoding="utf-8") as f:
-    csv.writer(f).writerows(best_rows)
-with open("all_benefits.csv", "w", newline="", encoding="utf-8") as f:
-    csv.writer(f).writerows(all_rows)
-
-print("✅ Saved: best_recommendations.csv, all_benefits.csv")
+# with open("best_recommendations.csv", "w", newline="", encoding="utf-8") as f:
+#     csv.writer(f).writerows(best_rows)
+# with open("all_benefits.csv", "w", newline="", encoding="utf-8") as f:
+#     csv.writer(f).writerows(all_rows)
+#
+# print("✅ Saved: best_recommendations.csv, all_benefits.csv")
 
 
 def process_all_clients(all_clients_data):

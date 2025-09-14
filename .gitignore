@@ -3,6 +3,7 @@
 .venv
 desired_transaction_data.json
 desired_transfer_data.json
+desired_data.json
 files
 test.py
 clients_test_data.json
