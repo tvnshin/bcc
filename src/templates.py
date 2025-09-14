@@ -123,13 +123,13 @@ def generate_personalized_push(client_payload: dict, product_key: str, benefit_v
     def _safe_get_tx(client_payload):
         return client_payload.get("transaction_data", {}) or {}
 
-    # --- safe basic fields ---
+    # safe basic fields
     name = client_payload.get("name") or "Клиент"
     age = client_payload.get("age", None)
     client_code = client_payload.get("client_code", "")
     bracket = _age_to_bracket(age)
 
-    # --- map internal product_key -> exact product title required in CSV ---
+    # map internal product_key -> exact product title required in CSV
     PRODUCT_TITLE = {
         "travel_card": "Карта для путешествий",
         "premium_card": "Премиальная карта",
@@ -147,7 +147,7 @@ def generate_personalized_push(client_payload: dict, product_key: str, benefit_v
     }
     product_title = PRODUCT_TITLE.get(product_key, product_key)
 
-    # --- avg balance / tier ---
+    # avg balance / tier 
     avg_balance = client_payload.get("avg_monthly_balance_KZT")
     avg_balance_str = _fmt_money(avg_balance, "₸") if avg_balance is not None else ""
 
@@ -165,7 +165,7 @@ def generate_personalized_push(client_payload: dict, product_key: str, benefit_v
         tier_percent = 1
     tier_str = f"{tier_percent}"
 
-    # --- top categories (KZT) ---
+    # top categories (KZT) 
     cat1 = cat2 = cat3 = "онлайн-услуги"
     try:
         expenses_per_cat = _safe_get_tx(client_payload).get("expenses_per_cat", {}) or {}
@@ -186,7 +186,7 @@ def generate_personalized_push(client_payload: dict, product_key: str, benefit_v
     except Exception:
         pass
 
-    # --- FX currency choice ---
+    # FX currency choice 
     fx_curr = "USD/EUR"
     try:
         expenses = _safe_get_tx(client_payload).get("expenses", {}) or {}
@@ -201,7 +201,7 @@ def generate_personalized_push(client_payload: dict, product_key: str, benefit_v
     except Exception:
         fx_curr = "USD/EUR"
 
-    # --- format benefit properly ---
+    # format benefit properly 
     # if product_key looks like FX, display benefit in fx_curr (if numeric)
     try:
         benefit_num = float(benefit_val) if benefit_val is not None else 0.0
@@ -214,7 +214,7 @@ def generate_personalized_push(client_payload: dict, product_key: str, benefit_v
     else:
         benefit_str = _fmt_money(benefit_num, "₸") if benefit_num is not None else ""
 
-    # --- pick template ---
+    # pick template 
     product_templates = TEMPLATES_BY_AGE.get(product_key, {})
     template = product_templates.get(bracket) if product_templates else None
     if template is None and product_templates:
@@ -222,7 +222,7 @@ def generate_personalized_push(client_payload: dict, product_key: str, benefit_v
     if template is None:
         template = "{name}, мы подобрали для вас продукт {product} — потенциальная выгода {benefit}."
 
-    # --- replacements for formatting ---
+    # replacements for formatting 
     replacements = {
         "name": name,
         "benefit": benefit_str,
@@ -235,7 +235,7 @@ def generate_personalized_push(client_payload: dict, product_key: str, benefit_v
         "product": product_title
     }
 
-    # --- render template safely ---
+    # render template safely 
     try:
         push_text = template.format(**replacements)
     except Exception:
@@ -244,10 +244,7 @@ def generate_personalized_push(client_payload: dict, product_key: str, benefit_v
         for k, v in replacements.items():
             push_text = push_text.replace("{" + k + "}", str(v))
 
-    # --- enforce TOV / length limits: no caps, max one exclamation, length <= 220 ---
-    # remove excessive CAPS (simple heuristic): if string is mostly lowercase already, keep as is;
-    # otherwise lower only words not at sentence start. To avoid aggressive transformations, we'll
-    # lower the whole string but capitalize first letter.
+    # enforce TOV
     if any(ch.isupper() for ch in push_text):
         push_text = push_text.lower()
         if len(push_text):
@@ -256,8 +253,6 @@ def generate_personalized_push(client_payload: dict, product_key: str, benefit_v
     # ensure max one exclamation: replace multiple '!' with single
     if push_text.count("!") > 1:
         push_text = push_text.replace("!", "")
-        # add at most one at the end if it feels like a CTA (not mandatory)
-        # skip adding an exclamation to avoid sounding pushy.
 
     # Trim to 220 chars preserving UTF-8 characters; prefer to keep whole words
     max_len = 220
