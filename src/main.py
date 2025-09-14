@@ -557,7 +557,7 @@ def process_all_clients(all_clients_data):
             benefit_val=max_benefit,
         )
 
-        recommendations_list.append([client_code, best_product, push_text])
+        recommendations_list.append(push_text)
 
     csv_file_path = "notifs.csv"
     with open(csv_file_path, "w", newline="", encoding="utf-8") as new_file:

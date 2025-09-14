@@ -135,6 +135,7 @@ def generate_personalized_push(client_payload: dict, product_key: str, benefit_v
         "travel_card": "Карта для путешествий",
         "premium_card": "Премиальная карта",
         "credit_card": "Кредитная карта",
+        "kartakarta_credit_card": "Кредитная карта",
         "fx": "Обмен валют",
         "cash_loan": "Кредит наличными",
         "multivalue_deposit": "Депозит мультивалютный",
@@ -145,6 +146,7 @@ def generate_personalized_push(client_payload: dict, product_key: str, benefit_v
         "deposit_nakop": "Депозит Накопительный",
         "investments": "Инвестиции",
         "gold_bars": "Золотые слитки",
+        "gold": "Золотые слитки",
     }
     product_title = PRODUCT_TITLE.get(product_key, product_key)
 
@@ -268,4 +270,4 @@ def generate_personalized_push(client_payload: dict, product_key: str, benefit_v
     push_text = push_text.strip()
 
     # return CSV-ready row: [client_code, product_title, push_text]
-    return push_text
+    return [client_code, product_title, push_text]
