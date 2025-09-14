@@ -10302,7 +10302,7 @@
     "34": {
         "name": "Инкар",
         "product": "Депозит Мультивалютный",
-        "status": "Стандартный клиент",
+        "status": "обычный",
         "city": "Караганда",
         "age": 37,
         "avg_monthly_balance_KZT": 115930,
@@ -10317,11 +10317,124 @@
                     "transactions": 0
                 },
                 "KZT": {
-                    "amount": 0.0,
-                    "transactions": 0
+                    "amount": 2288806.819999999,
+                    "transactions": 300
                 }
             },
-            "expenses_per_cat": {}
+            "expenses_per_cat": {
+                "Едим дома": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 145961.90999999995,
+                        "transactions": 28
+                    }
+                },
+                "Кафе и рестораны": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 450199.9,
+                        "transactions": 61
+                    }
+                },
+                "Смотрим дома": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 204714.12,
+                        "transactions": 35
+                    }
+                },
+                "Продукты питания": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 808222.7100000001,
+                        "transactions": 53
+                    }
+                },
+                "Играем дома": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 184919.99,
+                        "transactions": 36
+                    }
+                },
+                "АЗС": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 85116.38,
+                        "transactions": 5
+                    }
+                },
+                "Кино": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 139769.42,
+                        "transactions": 28
+                    }
+                },
+                "Такси": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 269902.39,
+                        "transactions": 54
+                    }
+                }
+            }
         },
         "transfer_data": {
             "amount_in": {
@@ -13319,7 +13432,7 @@
     "45": {
         "name": "Диана",
         "product": "Депозит Накопительный",
-        "status": "Зарплатный клиент",
+        "status": "зп",
         "city": "Караганда",
         "age": 27,
         "avg_monthly_balance_KZT": 72552,
@@ -13334,11 +13447,208 @@
                     "transactions": 0
                 },
                 "KZT": {
-                    "amount": 0.0,
-                    "transactions": 0
+                    "amount": 9307653.880000003,
+                    "transactions": 300
                 }
             },
-            "expenses_per_cat": {}
+            "expenses_per_cat": {
+                "Подарки": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 550629.4400000002,
+                        "transactions": 31
+                    }
+                },
+                "Продукты питания": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 864066.4600000002,
+                        "transactions": 45
+                    }
+                },
+                "Спорт": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 621808.26,
+                        "transactions": 34
+                    }
+                },
+                "Ремонт дома": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 1391793.47,
+                        "transactions": 23
+                    }
+                },
+                "Едим дома": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 131343.97,
+                        "transactions": 17
+                    }
+                },
+                "Мебель": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 917171.8600000001,
+                        "transactions": 20
+                    }
+                },
+                "Кафе и рестораны": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 1264161.9800000002,
+                        "transactions": 68
+                    }
+                },
+                "Смотрим дома": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 111564.19000000002,
+                        "transactions": 15
+                    }
+                },
+                "Одежда и обувь": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 797563.6000000001,
+                        "transactions": 19
+                    }
+                },
+                "Косметика и Парфюмерия": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 737486.9099999999,
+                        "transactions": 18
+                    }
+                },
+                "Отели": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 384755.74,
+                        "transactions": 4
+                    }
+                },
+                "Ювелирные украшения": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 1304268.6600000001,
+                        "transactions": 3
+                    }
+                },
+                "Авто": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 228330.57,
+                        "transactions": 2
+                    }
+                },
+                "Кино": {
+                    "USD": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "EUR": {
+                        "amount": 0.0,
+                        "transactions": 0
+                    },
+                    "KZT": {
+                        "amount": 2708.77,
+                        "transactions": 1
+                    }
+                }
+            }
         },
         "transfer_data": {
             "amount_in": {
