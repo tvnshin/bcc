@@ -2,6 +2,8 @@ import pandas as pd
 import glob
 import os
 import json
+import re
+
 
 from pandas.core.apply import reconstruct_func
 
@@ -12,7 +14,7 @@ transfers_columns = ['client_code', 'name', 'product', 'status', 'city', 'date',
 avg_columns = ['client_code', 'name', 'status', 'age', 'city', 'avg_monthly_balance_KZT']
 
 
-directory = 'files'
+directory = 'case 1'
 
 transactions_dfs = []
 transfers_dfs = []
@@ -20,8 +22,12 @@ transfers_dfs = []
 client_names = []
 client_codes = []
 clients = {}
+def _natural_key(path):
+    # сортировка 'file10' после 'file2' корректно
+    name = os.path.basename(path)
+    return [int(t) if t.isdigit() else t.lower() for t in re.split(r'(\d+)', name)]
 
-csv_files = glob.glob(os.path.join(directory, "*.csv"))
+csv_files = sorted(glob.glob(os.path.join(directory, "*.csv")), key=_natural_key)
 
 for file in csv_files:
     file_name = os.path.basename(file)
@@ -380,7 +386,20 @@ def process_all_clients(all_clients_data):
     recommendations_list = []
     for client_code, data in all_clients_data.items():
         best_product, max_benefit = find_best_product_for_client(data)
-        notif = generate_personalized_push(client_payload={"name": data["name"], "age": data["age"]}, product_key=best_product, benefit_val=max_benefit)
+        client_payload = {
+            "client_code": client_code,
+            "name": data.get("name"),
+            "age": data.get("age"),
+            "transaction_data": data.get("transaction_data"),
+            "avg_monthly_balance_KZT": data.get("avg_monthly_balance_KZT")
+        }
+
+        notif = generate_personalized_push(
+            client_payload=client_payload,
+            product_key=best_product,
+            benefit_val=max_benefit
+        )        
+        
         recommendations_list.append(notif)
         # template = TEMPLATES_BY_AGE.get(best_product).get("0-16")
         # if template:
